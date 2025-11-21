@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html>
+<html><body>
+<h2>📝 Transcript</h2>
+<p>{{ transcript }}</p>
+<h3>📌 Predicted Topic: {{ topic }}</h3>
+<h4>🎯 Recommendations:</h4>
+<ul>
+{% for r in recommendations %}
+    <li><a href="/static/stm/{{ r.file }}" target="_blank">{{ r.file }}</a> ({{ r.year }})</li>
+{% endfor %}
+</ul>
+<a href="/">← Back</a>
+</body></html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TED Talk Recommendation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e2f;
+            color: white;
+            padding: 30px;
+        }
+        h2, h3, h4 {
+            color: #FFD700;
+        }
+        a {
+            color: #00bfff;
+        }
+        .rec-block {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #2a2a40;
+            border-radius: 10px;
+        }
+        .back-link {
+            display: block;
+            margin-top: 40px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>📝 Transcript</h2>
+<p>{{ transcript }}</p>
+
+<h3>📌 Predicted Topic: {{ topic }}</h3>
+
+<h3>🎯 Recommendations:</h3>
+<div>
+    {% for r in recommendations %}
+    <div class="rec-block">
+        <h4>
+            🎙️ <a href="{{ r.speaker_url }}" target="_blank">{{ r.file }}</a> ({{ r.year }})
+        </h4>
+        <p>
+            <a href="/static/stm/{{ r.file }}" target="_blank">📎 Download .stm File</a>
+        </p>
+    </div>
+    {% endfor %}
+</div>
+
+<a class="back-link" href="/">← Back to Home</a>
+
+</body>
+</html>
+

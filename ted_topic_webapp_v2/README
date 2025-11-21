@@ -1,0 +1,25 @@
+ted_topic_webapp_v2/
+├── TEDLIUM_r1              # Datasets
+│   └── stm/               
+│   └── README          
+├── final_v2.ipynb          # Basic dashboard implemented, including Topic classification, Keywords Extraction and Evolution tracking
+├── __pycache__             # Python bytecode cache (auto-generated)
+├── audio_upload/           # Temporary directory for user-uploaded audio files 
+├── static
+│   └── stm/                # Original TED .stm transcript files
+│   └── style.css           # Optional CSS file (currently unused in templates)  
+├── templates
+│   └── index.html          # Home page (Flask template, includes Dash dashboard + audio upload)
+│   └── result.html         # Recommendation result display page (Flask template)
+├── app.py 
+├── dashboard_test.py       # Unused
+├── dashboard.py            # Main Dash application (topic trend, word cloud, sample STM preview)
+├── README
+├── requirements.txt        # Required Python dependencies
+├── run.py                  # Main program, Dash web app entry point
+├── stm_topic.csv           # Precomputed TED topic classification and keywords (from topic modeling)
+└── utils.py                # Utility functions for transcription (Whisper) and topic recommendation
+
+
+1. pip install -r requirements.txt
+2. python3 'run.py'

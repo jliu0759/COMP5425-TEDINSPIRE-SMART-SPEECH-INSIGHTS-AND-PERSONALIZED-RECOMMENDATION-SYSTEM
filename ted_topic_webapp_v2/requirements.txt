@@ -1,0 +1,11 @@
+# pip install -r requirements.txt
+# python app.py
+
+flask
+dash
+plotly
+pandas
+matplotlib
+whisper
+torch
+wordcloud

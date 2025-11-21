@@ -1,0 +1,27 @@
+This is the TED-LIUM corpus release 1, 
+licensed under Creative Commons BY-NC-ND 3.0 (http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en).
+
+All talks and text are property of TED Conferences LLC.
+
+---
+
+Contents:
+
+- 774 audio talks in NIST sphere format (SPH)
+- 774 aligned automatic transcripts in STM format
+- Dictionary with pronunciation (157617 words)
+
+---
+
+SPH Header info:
+
+sample_n_bytes 2
+channel_count 1
+sample_byte_format 10
+sample_rate 16000
+sample_coding pcm
+
+---
+
+A. Rousseau, P. Deléglise, and Y. Estève, "TED-LIUM: an automatic speech recognition dedicated corpus",
+in Proceedings of the Eighth International Conference on Language Resources and Evaluation (LREC’12), May 2012.
